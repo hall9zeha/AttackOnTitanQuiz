@@ -23,6 +23,13 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.all {
+                    def formattedDate = new Date().format('yyyyMMddHHmmss')
+                    def flavor = variant.name
+                    def versionName = variant.versionName
+                    outputFileName = "QuizApp${versionName}_Kotlin.apk"
+                }}
         }
     }
     compileOptions {
