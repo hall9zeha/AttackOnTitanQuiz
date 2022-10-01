@@ -29,5 +29,7 @@ Aplicación(reto técnico) de preguntas y respuestas usando la temática del ani
 <img src="https://github.com/hall9zeha/AttackOnTitanQuiz/blob/main/screenshots/ranking.jpg" alt="drawing" width="300"/>|
 <img src="https://github.com/hall9zeha/AttackOnTitanQuiz/blob/main/screenshots/quiz.jpg" alt="drawing" width="300"/>
 
+## Descarga la aplicación 
+Descarga la apk [aquí]("https://github.com/hall9zeha/AttackOnTitanQuiz/tree/main/apk/QuizApp1.0_Kotlin.apk")
 
 
