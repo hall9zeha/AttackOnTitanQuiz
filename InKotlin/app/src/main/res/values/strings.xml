@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name" translatable="false">QuizQuestion</string>
+    <string name="seeRanking">Ranking</string>
+    <string name="playText">Jugar</string>
+    <string name="playerName">tu nombre novato</string>
+    <string name="exit">Abandonar</string>
+    <string name="save">Guardar</string>
+    <string name="scoreMaxMsg">Bienvenido a la legión de exploración novato, donde están los verdaderos héroes</string>
+    <string name="scoreMediumMsg">Parece que tendrás una vida tranquila en la policía militar</string>
+    <string name="lowScoreMsg">Tal vez la próxima tendrás más suerte, si no acabas en el estómago de un titán.</string>
+    <string name="writeYouName">Debes escribir un nombre</string>
+
+    <string name="savedScore">Puntuación registrada</string>
+
+
+</resources>
