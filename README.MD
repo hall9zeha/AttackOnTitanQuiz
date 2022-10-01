@@ -23,4 +23,11 @@ Aplicación(reto técnico) de preguntas y respuestas usando la temática del ani
 * [Glide](https://developer.android.com/training/dependency-injection/hilt-android) 
 * [Lyfecycle view model](https://developer.android.com/jetpack/androidx/releases/lifecycle)
 
+## Capturas 🖼️
+
+<img src="https://github.com/hall9zeha/AttackOnTitanQuiz/blob/main/screenshots/main.jpg" alt="drawing" width="300"/>|
+<img src="https://github.com/hall9zeha/AttackOnTitanQuiz/blob/main/screenshots/ranking.jpg" alt="drawing" width="300"/>|
+<img src="https://github.com/hall9zeha/AttackOnTitanQuiz/blob/main/screenshots/quiz.jpg" alt="drawing" width="300"/>
+
+
 
