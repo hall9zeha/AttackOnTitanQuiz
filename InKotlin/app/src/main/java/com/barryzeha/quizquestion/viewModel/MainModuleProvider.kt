@@ -7,6 +7,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ViewModelComponent
+import dagger.hilt.android.scopes.ViewModelScoped
 
 /****
  * Project QuizQuestion
@@ -17,7 +18,7 @@ import dagger.hilt.android.components.ViewModelComponent
 @InstallIn(ViewModelComponent::class)
 class MainModuleProvider {
     @Provides
-    @ViewModelFactoryDsl
+    @ViewModelScoped
     fun getRankingProvider(
         repository:RankingRepository,
         questionsRepository: QuestionsRepository) = GetResult(repository, questionsRepository)

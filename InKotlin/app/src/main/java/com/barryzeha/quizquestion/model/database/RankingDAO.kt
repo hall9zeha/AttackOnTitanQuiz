@@ -13,7 +13,7 @@ import com.barryzeha.quizquestion.model.RankingModel
 interface RankingDAO {
 @Insert(onConflict = OnConflictStrategy.REPLACE)
 fun saveRanking(ranking: RankingModel)
-@Query("select  * from ranking_table order by points desc")
+@Query("select  * from ranking_table order by points desc limit 10")
 fun getRankings():MutableList<RankingModel>
 
 }

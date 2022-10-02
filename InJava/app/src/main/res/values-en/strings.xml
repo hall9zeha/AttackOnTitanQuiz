@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="playText">Play</string>
+    <string name="playerName">your name newbie</string>
+    <string name="exit">" Quit"</string>
+    <string name="save">Save</string>
+    <string name="scoreMaxMsg">Welcome to the rookie scouting legion, where the real heroes are</string>
+    <string name="scoreMediumMsg">It seems that you will have a quiet life in the military police</string>
+    <string name="lowScoreMsg">" Maybe next time you'll have better luck, if you don't end up in the stomach of a titan."</string>
+    <string name="writeYouName">" You must write a name"</string>
+    <string name="savedScore">" Recorded Score"</string>
+</resources>

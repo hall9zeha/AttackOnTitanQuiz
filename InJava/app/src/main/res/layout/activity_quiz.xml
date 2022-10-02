@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.QuizActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ivBackgroundQuestion"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/question_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvQuestion"
+        style="@style/myTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_padding_min"
+        android:layout_marginTop="@dimen/common_padding_big"
+        android:layout_marginEnd="@dimen/common_padding_min"
+        tools:text="¿Conoces mucho sobre ataque a de los titanes?, pruebalo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivQuestion"
+        android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:background="@drawable/background_imageview_question"
+        android:layout_marginTop="@dimen/common_padding_min"
+        app:layout_constraintBottom_toTopOf="@id/pbTimer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvQuestion"
+        tools:ignore="ContentDescription"
+        android:src="@drawable/placeholder" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/pbTimer"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="@dimen/common_padding_default"
+        android:indeterminate="false"
+        app:indicatorColor="@color/white"
+        app:indicatorSize="86dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivQuestion"
+        app:trackThickness="@dimen/common_padding_min"
+        tools:progress="20" />
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/pbTimer"
+        app:layout_constraintEnd_toEndOf="@id/pbTimer"
+        app:layout_constraintStart_toStartOf="@id/pbTimer"
+        app:layout_constraintTop_toTopOf="@id/pbTimer"
+        tools:text="20" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAnswer1"
+        style="@style/buttonAnswerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_padding_default"
+        android:tag="1"
+        android:text="respuesta 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pbTimer" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAnswer2"
+        style="@style/buttonAnswerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_padding_default"
+        android:tag="2"
+        android:text="respuesta 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAnswer1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAnswer3"
+        style="@style/buttonAnswerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_padding_default"
+        android:tag="3"
+        android:text="respuesta 3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAnswer2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
